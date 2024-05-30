@@ -1,0 +1,34 @@
+name: setup
+
+on: workflow_call
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+      - uses: actions/cache@v4
+        id: pnpm-cache
+        with:
+          path: |
+            ${{ github.workspace }}/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}-nodemodules
+      - name: Install packages
+        if: steps.pnpm-cache.outputs.cache-hit != 'true'
+        run: pnpm install
+
+  check:
+    runs-on: ubuntu-latest
+    needs: install
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ${{ github.workspace }}/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock') }}-nodemodules
+      - name: tsc/lint/format check
+        run: pnpm tsc && pnpm run biome ci .
