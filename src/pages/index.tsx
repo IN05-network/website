@@ -8,11 +8,11 @@ const RootPage = () => {
     if (props.url.startsWith('mailto')) {
       icon = 'mail';
       style =
-        "bg-[url('/images/email.svg')] bg-favicon bg-left bg-no-repeat pl-[19px]";
+        "bg-[url('/images/email.svg')] bg-favicon bg-left bg-no-repeat pl-[21px]";
     } else if (props.url.startsWith('http')) {
       icon = 'url';
       if (new URL(props.url).hostname === 'soundcloud.com') {
-        style = `bg-[url('https://www.google.com/s2/favicons?domain=soundcloud.com')] bg-favicon bg-left bg-no-repeat pl-[19px]`;
+        style = `bg-[url('https://www.google.com/s2/favicons?domain=soundcloud.com')] bg-favicon bg-left bg-no-repeat pl-[21px]`;
       }
     }
 
