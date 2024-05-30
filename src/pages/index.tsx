@@ -3,23 +3,22 @@ import TopImage from '/public/images/top.jpg';
 
 const RootPage = () => {
   const LinkWithIcon = (props: { url: string; text: string }) => {
-    let bgUrl = '';
+    let icon = '';
+    let style = '';
     if (props.url.startsWith('mailto')) {
-      bgUrl = 'bg-[url("/email.svg")]';
+      icon = 'mail';
+      style =
+        "bg-[url('/images/email.svg')] bg-favicon bg-left bg-no-repeat pl-[19px]";
     } else if (props.url.startsWith('http')) {
-      bgUrl = `bg-[url("https://www.google.com/s2/favicons?domain=${
-        new URL(props.url).hostname
-      }")]`;
+      icon = 'url';
+      if (new URL(props.url).hostname === 'soundcloud.com') {
+        style = `bg-[url('https://www.google.com/s2/favicons?domain=soundcloud.com')] bg-favicon bg-left bg-no-repeat pl-[19px]`;
+      }
     }
-
-    console.log(bgUrl);
 
     return (
       <>
-        <a
-          href={props.url}
-          className={`${bgUrl} bg-favicon bg-left bg-no-repeat pl-[19px]`}
-        >
+        <a href={props.url} className={style}>
           {props.text}
         </a>
       </>
@@ -28,6 +27,7 @@ const RootPage = () => {
 
   return (
     <div className="text-center">
+      {/* needfix: replace with IN05 logo */}
       <h1 id="name" className="text-6xl">
         IN05
       </h1>
@@ -39,6 +39,7 @@ const RootPage = () => {
 
         <div className="w-full p-4 text-center laptop:text-left">
           <ul>
+            {/* needfix: add more socials  */}
             <li>
               <LinkWithIcon
                 url="https://soundcloud.com/in05-network"
