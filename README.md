@@ -7,4 +7,12 @@
 
 ### Development
 1. Setup environment `pnpm install && pnpm simple-git-hooks`
-2. Open dev environment `pnpm dev` and make changes to the code
+2. Open dev environment `pnpm dev` and make changes to the code.
+
+### File structure
+- website source: `src`
+- css config:`tailwind.config.ts` style: `src/styles`
+- lint & format settings: `biome.json`
+- git
+- VSCode settings: `.vscode/`
+- CI: `.github/workflows/`

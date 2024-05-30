@@ -19,10 +19,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "yarn run biome check .",
-    "lint:fix": "yarn run biome check . --apply",
-    "format": "yarn run biome format .",
-    "format:fix": "yarn run biome format . --write"
+    "scan": "biome ci .",
+    "tsc": "tsc",
+    "lint": "biome check .",
+    "lint:fix": "biome check . --apply",
+    "format": "biome format .",
+    "format:fix": "biome format . --write"
   },
   "dependencies": {
     "next": "14.2.3",
@@ -41,6 +43,6 @@
   },
   "packageManager": "pnpm@9.1.4+sha1.2432063d815cfa88fd9fef1d85a445e3f609851d",
   "simple-git-hooks": {
-    "pre-push": "npx lint-staged"
+    "pre-push": "pnpm run biome ci ."
   }
 }

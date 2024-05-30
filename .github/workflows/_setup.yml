@@ -7,17 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20.x
-      - uses: actions/cache@v4
-        id: pnpm-cache
-        with:
-          path: |
-            ${{ github.workspace }}/node_modules
-          key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}-nodemodules
+          cache: 'pnpm'
       - name: Install packages
-        if: steps.pnpm-cache.outputs.cache-hit != 'true'
         run: pnpm install
 
   check:
@@ -25,10 +21,13 @@ jobs:
     needs: install
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/cache@v4
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
         with:
-          path: |
-            ${{ github.workspace }}/node_modules
-          key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock') }}-nodemodules
+          node-version: 20.x
+          cache: 'pnpm'
+      - name: Install packages
+        run: pnpm install && corepack enable pnpm
       - name: tsc/lint/format check
-        run: pnpm tsc && pnpm run biome ci .
+        run: pnpm tsc --moduleResolution node && pnpm scan

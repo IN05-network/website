@@ -6,7 +6,7 @@
     "rules": {
       "nursery": {
         "useSortedClasses": {
-          "level": "warn",
+          "level": "off",
           "options": { "attributes": [], "functions": [] }
         }
       }

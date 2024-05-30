@@ -13,11 +13,12 @@ jobs:
     needs: setup
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/cache@v4
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+      - uses: actions/setup-node@v4
         with:
-          path: |
-            ${{ github.workspace }}/node_modules
-          key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}-nodemodules
+          node-version: 20.x
+          cache: 'pnpm'
       - uses: actions/cache@v4
         id: build-cache
         with:
@@ -26,7 +27,7 @@ jobs:
           restore-keys: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}-next-build-
       - name: Run build
         if: steps.build-cache.outputs.cache-hit != 'true'
-        run: pnpm turbo build
+        run: pnpm install && corepack enable pnpm && pnpm build
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
