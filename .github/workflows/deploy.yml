@@ -22,7 +22,7 @@ jobs:
           cache: 'pnpm'
       - name: Install packages
         run: pnpm install && corepack enable pnpm
-      - uses: actions/configure-pages@v4
+      - uses: actions/configure-pages@v5
         with:
           static_site_generator: next
       - name: build site
