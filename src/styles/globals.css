@@ -26,6 +26,24 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+@layer base {
+  h1 {
+    @apply mx-0 my-[0.67em] block font-bold text-6xl;
+  }
+  h2 {
+    @apply mx-0 my-[0.83em] block font-bold text-4xl;
+  }
+  h3 {
+    @apply mx-0 my-[1em] block font-bold text-3xl;
+  }
+  p, ul {
+    @apply block text-2xl leading-relaxed tracking-wide;
+  }
+  a {
+    @apply underline decoration-dotted hover:text-info
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
