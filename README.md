@@ -10,9 +10,8 @@
 2. Open dev environment `pnpm dev` and make changes to the code.
 
 ### File structure
-- website source: `src`
+- website source: `src/pages` static assets: `public`
 - css config:`tailwind.config.ts` style: `src/styles`
 - lint & format settings: `biome.json`
-- git
 - VSCode settings: `.vscode/`
 - CI: `.github/workflows/`
