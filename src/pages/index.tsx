@@ -9,7 +9,7 @@ const RootPage = () => {
     if (props.url.startsWith('mailto')) {
       icon = 'mail';
       style =
-        "bg-[url('/images/icons8-email-50.png')] bg-favicon bg-left bg-no-repeat pl-[21px]";
+        "bg-[url('/images/email.svg')] bg-favicon bg-left bg-no-repeat pl-[21px]";
     } else if (props.url.startsWith('http')) {
       icon = 'url';
       if (new URL(props.url).hostname === 'soundcloud.com') {
@@ -28,12 +28,10 @@ const RootPage = () => {
 
   return (
     <div className="text-center">
-      <h1>
-        <Image src={Logo} alt="Logo" width={100} height={100} />
-      </h1>
+      <Image src={Logo} alt="Logo" width={100} height={100} />
 
       <div id="section" className="flex flex-col laptop:flex-row">
-        <div className="flex w-full justify-center p-4">
+        <div className="flex w-full px-4">
           <Image src={TopImage} alt="IN05" height={960} />
         </div>
 
