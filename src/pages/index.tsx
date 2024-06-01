@@ -39,7 +39,7 @@ const RootPage = () => {
   return (
     <div className="text-center">
       <h1>
-		<Image src={Logo} alt="Logo" width={100} height={100} />
+        <Image src={Logo} alt="Logo" width={100} height={100} />
       </h1>
 
       <div id="section" className="flex flex-col laptop:flex-row">
