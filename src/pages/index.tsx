@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import TopImage from '/public/images/top.jpg';
+import Logo from '/public/images/logo.png';
 
 const RootPage = () => {
   const [fadeOut, setFadeOut] = useState(false);
@@ -37,9 +38,8 @@ const RootPage = () => {
 
   return (
     <div className="text-center">
-      {/* needfix: replace with IN05 logo */}
-      <h1 id="name" className="text-6xl">
-        IN05
+      <h1>
+		<Image src={Logo} alt="Logo" width={100} height={100} />
       </h1>
 
       <div id="section" className="flex flex-col laptop:flex-row">
