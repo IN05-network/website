@@ -1,17 +1,9 @@
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
 import TopImage from '/public/images/top.jpg';
 import Logo from '/public/images/logo.png';
 
 const RootPage = () => {
   const [fadeOut, setFadeOut] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setFadeOut(true);
-    }, 2000);
-    return () => clearTimeout(timer);
-  }, []);
 
   const LinkWithIcon = (props: { url: string; text: string }) => {
     let icon = '';
