@@ -3,8 +3,6 @@ import TopImage from '/public/images/top.jpg';
 import Logo from '/public/images/logo.png';
 
 const RootPage = () => {
-  const [fadeOut, setFadeOut] = useState(false);
-
   const LinkWithIcon = (props: { url: string; text: string }) => {
     let icon = '';
     let style = '';
