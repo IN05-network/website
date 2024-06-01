@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import TopImage from '/public/images/top.jpg';
 import Logo from '/public/images/logo.png';
+import TopImage from '/public/images/top.jpg';
 
 const RootPage = () => {
   const LinkWithIcon = (props: { url: string; text: string }) => {
