@@ -65,13 +65,13 @@ const config: Config = {
       favicon: '16px 16px',
     },
     extend: {
-	  keyframes: {
-		fadeOut: {
-				'0%': { opacity: '1' },
-				'100%': { opacity: '0' },
-				},
-	  },
-	  animation: {
+      keyframes: {
+        fadeOut: {
+          '0%': { opacity: '1' },
+          '100%': { opacity: '0' },
+        },
+      },
+      animation: {
         fadeOut: 'fadeOut 3s ease-out forwards',
       },
       backgroundImage: {

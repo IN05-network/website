@@ -1,16 +1,16 @@
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 import TopImage from '/public/images/top.jpg';
-import {useState, useEffect} from 'react';
 
 const RootPage = () => {
-	  const [fadeOut, setFadeOut] = useState(false);
-  
+  const [fadeOut, setFadeOut] = useState(false);
+
   useEffect(() => {
-	const timer = setTimeout(() => {
-	setFadeOut(true);
-  }, 2000);
-  return () => clearTimeout(timer); 
-},[]);
+    const timer = setTimeout(() => {
+      setFadeOut(true);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
 
   const LinkWithIcon = (props: { url: string; text: string }) => {
     let icon = '';
@@ -34,7 +34,7 @@ const RootPage = () => {
       </>
     );
   };
-  
+
   return (
     <div className="text-center">
       {/* needfix: replace with IN05 logo */}
