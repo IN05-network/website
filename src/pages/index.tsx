@@ -1,17 +1,8 @@
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import Logo from '/public/images/logo.png';
 import TopImage from '/public/images/top.jpg';
 
 const RootPage = () => {
-  const [fadeOut, setFadeOut] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setFadeOut(true);
-    }, 2000);
-    return () => clearTimeout(timer);
-  }, []);
-
   const LinkWithIcon = (props: { url: string; text: string }) => {
     let icon = '';
     let style = '';
@@ -37,9 +28,8 @@ const RootPage = () => {
 
   return (
     <div className="text-center">
-      {/* needfix: replace with IN05 logo */}
-      <h1 id="name" className="text-6xl">
-        IN05
+      <h1>
+        <Image src={Logo} alt="Logo" width={100} height={100} />
       </h1>
 
       <div id="section" className="flex flex-col laptop:flex-row">
