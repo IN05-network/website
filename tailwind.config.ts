@@ -65,6 +65,15 @@ const config: Config = {
       favicon: '16px 16px',
     },
     extend: {
+      keyframes: {
+        fadeOut: {
+          '0%': { opacity: '1' },
+          '100%': { opacity: '0' },
+        },
+      },
+      animation: {
+        fadeOut: 'fadeOut 3s ease-out forwards',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
