@@ -9,7 +9,7 @@ const RootPage = () => {
     if (props.url.startsWith('mailto')) {
       icon = 'mail';
       style =
-        "bg-[url('/images/email.svg')] bg-favicon bg-left bg-no-repeat pl-[21px]";
+        "bg-[url('/images/icons8-email-50.png')] bg-favicon bg-left bg-no-repeat pl-[21px]";
     } else if (props.url.startsWith('http')) {
       icon = 'url';
       if (new URL(props.url).hostname === 'soundcloud.com') {
@@ -43,7 +43,7 @@ const RootPage = () => {
             <li>
               <LinkWithIcon
                 url="https://soundcloud.com/in05-network"
-                text="Soundcloud"
+                text="SoundCloud"
               />
             </li>
             <li>
