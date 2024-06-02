@@ -1,21 +1,11 @@
 import Image from 'next/image';
 import Logo from '/public/images/logo.png';
-import TopImage from '/public/images/top.jpg';
+import TopImage from '/public/images/top.svg';
 
 const RootPage = () => {
   const LinkWithIcon = (props: { url: string; text: string }) => {
-    let icon = '';
-    let style = '';
-    if (props.url.startsWith('mailto')) {
-      icon = 'mail';
-      style =
-        "bg-[url('/images/email.svg')] bg-favicon bg-left bg-no-repeat pl-[21px]";
-    } else if (props.url.startsWith('http')) {
-      icon = 'url';
-      if (new URL(props.url).hostname === 'soundcloud.com') {
-        style = `bg-[url('https://www.google.com/s2/favicons?domain=soundcloud.com')] bg-favicon bg-left bg-no-repeat pl-[21px]`;
-      }
-    }
+    const icon = '';
+    const style = '';
 
     return (
       <>
@@ -41,11 +31,11 @@ const RootPage = () => {
             <li>
               <LinkWithIcon
                 url="https://soundcloud.com/in05-network"
-                text="SoundCloud"
+                text="sounds"
               />
             </li>
             <li>
-              <LinkWithIcon url="mailto:contact@in05.org" text="Contact us" />
+              <LinkWithIcon url="mailto:contact@in05.org" text="contact" />
             </li>
           </ul>
         </div>
