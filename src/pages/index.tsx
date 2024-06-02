@@ -4,8 +4,8 @@ import TopImage from '/public/images/top.svg';
 
 const RootPage = () => {
   const LinkWithIcon = (props: { url: string; text: string }) => {
-    let icon = '';
-    let style = '';
+    const icon = '';
+    const style = '';
 
     return (
       <>
