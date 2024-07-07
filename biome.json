@@ -6,7 +6,7 @@
     "rules": {
       "nursery": {
         "useSortedClasses": {
-          "level": "off",
+          "level": "warn",
           "options": { "attributes": [], "functions": [] }
         }
       }
@@ -26,8 +26,17 @@
   "javascript": {
     "formatter": {
       "quoteStyle": "single",
-      "quoteProperties": "asNeeded",
-      "trailingComma": "all"
+      "quoteProperties": "asNeeded"
+    }
+  },
+  "css": {
+    "formatter": {
+      "enabled": true,
+      "indentStyle": "space",
+      "indentWidth": 2
+    },
+    "parser": {
+      "allowWrongLineComments": false
     }
   },
   "json": {
