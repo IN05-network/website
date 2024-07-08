@@ -22,7 +22,7 @@
     "scan": "biome ci .",
     "tsc": "tsc",
     "lint": "biome check .",
-    "lint:fix": "biome check . --apply",
+    "lint:fix": "biome check . --write",
     "format": "biome format .",
     "format:fix": "biome format . --write"
   },
