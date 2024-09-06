@@ -1,9 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 import LogoMark from '/public/images/logomark.svg';
+import LogoType_Blue from '/public/images/logotype_blue.png';
 import LogoType_White from '/public/images/logotype_white.png';
 
 const RootPage = () => {
+  const [isHover, setIsHover] = useState(false);
   const LinkWithIcon = (props: { url: string; text: string }) => {
     const style =
       'bg-[image:var(--favicon-url)] bg-left bg-no-repeat pl-[20px] inline-block bg-contain';
@@ -36,17 +39,38 @@ const RootPage = () => {
   };
 
   return (
-    <div className="text-center">
-      <Link href="/">
-        <Image src={LogoType_White} alt="Logo" width={100} height={100} />
-      </Link>
+    <div className="text-left font-mono">
+      <div className="inline-block p-6">
+        <Link
+          className="no-underline hover:text-neutral-100"
+          href="/"
+          onMouseEnter={() => setIsHover(true)}
+          onMouseLeave={() => setIsHover(false)}
+        >
+          <Image
+            src={isHover ? LogoType_Blue : LogoType_White}
+            alt="Logo"
+            width={100}
+            height={100}
+          />
+        </Link>
+      </div>
 
-      <div id="section" className="flex flex-col laptop:flex-row">
-        <div className="flex w-full px-4">
-          <Image src={LogoMark} alt="IN05" height={960} />
+      <div id="section" className="">
+        <div className="fixed inset-0 z-[-1] h-full w-full opacity-50">
+          <Image
+            src="https://www.in05.org/images/logomark.svg"
+            alt="IN05"
+            layout="fill"
+          />
         </div>
 
-        <div className="w-full p-4 text-center laptop:text-left">
+        <div className="w-full px-8 py-4">
+          <p>
+            IN05 is an emergent network of hackers, designers, artists, and
+            punks in Tokyo.
+          </p>
+          <br />
           <ul>
             {/* add more socials  */}
             <li>
