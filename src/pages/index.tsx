@@ -71,6 +71,12 @@ const RootPage = () => {
             punks in Tokyo.
           </p>
           <br />
+          <p>
+            <Link href="https://house.in05.org">
+              [NEWS] New members wanted!
+            </Link>
+          </p>
+          <br />
           <ul>
             {/* add more socials  */}
             <li>
