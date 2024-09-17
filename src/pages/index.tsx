@@ -67,8 +67,8 @@ const RootPage = () => {
 
         <div className="w-full px-8 py-4">
           <p>
-            IN05 is an emergent network of hackers, designers, artists, and
-            punks in Tokyo.
+            IN05 is a collaborative project by an emergent network of hackers,
+            designers, artists, and punks in Tokyo.
           </p>
           <br />
           <p>
@@ -77,21 +77,50 @@ const RootPage = () => {
             </Link>
           </p>
           <br />
-          <ul>
-            {/* add more socials  */}
-            <li>
-              <LinkWithIcon
-                url="https://soundcloud.com/in05-network"
-                text="soundcloud"
-              />
-            </li>
-            <li>
-              <LinkWithIcon url="https://x.com/in05x" text="twitter" />
-            </li>
-            <li>
-              <LinkWithIcon url="mailto:contact@in05.org" text="contact" />
-            </li>
-          </ul>
+          <div className="space-y-8">
+            <div>
+              <h3>Current Members</h3>
+              <ul>
+                {/* add more socials  */}
+                <li>
+                  <LinkWithIcon url="https://sho.hihara.cc/" text="Neila" />
+                </li>{' '}
+                <li>
+                  <LinkWithIcon url="https://silmin.net/" text="Silmin" />
+                </li>
+                <li>
+                  <LinkWithIcon
+                    url="https://x.com/TRNT_MST"
+                    text="Torrent Shinoda"
+                  />
+                </li>
+                <li>
+                  <LinkWithIcon
+                    url="https://www.instagram.com/taiishiro/"
+                    text="Tai"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>Socials</h3>
+              <ul>
+                {/* add more socials  */}
+                <li>
+                  <LinkWithIcon
+                    url="https://soundcloud.com/in05-network"
+                    text="soundcloud"
+                  />
+                </li>
+                <li>
+                  <LinkWithIcon url="https://x.com/in05x" text="twitter" />
+                </li>
+                <li>
+                  <LinkWithIcon url="mailto:contact@in05.org" text="contact" />
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
