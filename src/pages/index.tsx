@@ -67,7 +67,7 @@ const RootPage = () => {
 
         <div className="w-full px-8 py-4">
           <p>
-            IN05 is a collaborative propnect by an emergent network of hackers,
+            IN05 is a collaborative project by an emergent network of hackers,
             designers, artists, and punks in Tokyo.
           </p>
           <br />
