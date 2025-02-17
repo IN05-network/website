@@ -41,10 +41,10 @@ const RootPage = () => {
           <div className="grid grid-cols-2 gap-32">
             <div>
               <ul className="text-right">
-                <li>古着</li>
-                <li>古本</li>
-                <li>香水</li>
-                <li>オリジナルステッカー</li>
+                <li>(OGを名乗れる！もうPJが存在しない)Tシャツ</li>
+                <li>（読んで面白かった）古本</li>
+                <li>（モテるかも！ケイスケホンダにもらった）香水</li>
+                {/* <li>オリジナルステッカー</li> */}
               </ul>
             </div>
             <div>
@@ -52,10 +52,12 @@ const RootPage = () => {
                 <li>$5</li>
                 <li>$5 (3着)</li>
                 <li>$15</li>
-                <li>$2 / 3 for $5</li>
+                {/* <li>$2 / 3 for $5</li> */}
               </ul>
             </div>
           </div>
+          <br />
+          <p>支払いは irohas.eth 迄</p>
         </div>
       </div>
     </div>

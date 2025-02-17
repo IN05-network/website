@@ -30,4 +30,4 @@ jobs:
       - name: Install packages
         run: pnpm install && corepack enable pnpm
       - name: tsc/lint/format check
-        run: pnpm tsc --moduleResolution node && pnpm scan
+        run: pnpm tsc && pnpm scan
