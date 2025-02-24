@@ -28,6 +28,13 @@ jobs:
           node-version: 20.x
           cache: 'pnpm'
       - name: Install packages
-        run: pnpm install && corepack enable pnpm
+        run: pnpm install
+      - name: Use latest corepack
+        run: |
+          echo "Current: corepack $(corepack --version || echo 'not installed')"
+          pnpm install -g corepack@latest
+          echo "Upgraded : corepack $(corepack --version)"
+          corepack enable pnpm
+          pnpm --version
       - name: tsc/lint/format check
-        run:  pnpm scan
+        run: pnpm tsc --moduleResolution node && pnpm scan

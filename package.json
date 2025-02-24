@@ -1,6 +1,6 @@
 {
   "name": "in05-website",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "description": "official website for IN05 network",
   "main": "src/pages/index.tsx",
@@ -28,6 +28,8 @@
   },
   "dependencies": {
     "next": "14.2.3",
+    "next-language-detector": "^1.1.0",
+    "next-translate": "^2.6.2",
     "react": "~18.2.0",
     "react-dom": "~18.2.0"
   },
@@ -43,6 +45,6 @@
   },
   "packageManager": "pnpm@9.1.4+sha1.2432063d815cfa88fd9fef1d85a445e3f609851d",
   "simple-git-hooks": {
-    "pre-push": "pnpm biome ci ."
+    "pre-commit": "pnpm scan"
   }
 }
