@@ -10,7 +10,7 @@ const RootPage = () => {
 
   return (
     <div className="text-left font-mono">
-      <div className="inline-block p-6">
+      {/* <div className="inline-block p-6">
         <Link
           className="no-underline hover:text-neutral-100"
           href="/"
@@ -24,7 +24,7 @@ const RootPage = () => {
             height={100}
           />
         </Link>
-      </div>
+      </div> */}
 
       <div id="section" className="">
         <div className="fixed inset-0 z-[-1] h-full w-full opacity-50">
@@ -41,17 +41,17 @@ const RootPage = () => {
           <div className="grid grid-cols-2 gap-32">
             <div>
               <ul className="text-right">
-                <li>(OGを名乗れる！もうPJが存在しない)Tシャツ</li>
-                <li>（読んで面白かった）古本</li>
-                <li>（モテるかも！ケイスケホンダにもらった）香水</li>
+                <li>（読んで面白かった,自慢の）古本</li>
+                <li>(PJが既に消えた/ピボった, OGを名乗れる)Tシャツ</li>
+                <li>（ケイスケホンダにもらった,謎の）香水</li>
                 {/* <li>オリジナルステッカー</li> */}
               </ul>
             </div>
             <div>
               <ul className="text-left">
-                <li>$5</li>
-                <li>$5 (3着)</li>
-                <li>$15</li>
+                <li>$2</li>
+                <li>$1</li>
+                <li>$10</li>
                 {/* <li>$2 / 3 for $5</li> */}
               </ul>
             </div>
