@@ -5,7 +5,7 @@ import LogoMark from '/public/images/logomark.svg';
 import LogoType_Blue from '/public/images/logotype_blue.png';
 import LogoType_White from '/public/images/logotype_white.png';
 
-const RootPage = () => {
+const FleaMarketPage = () => {
   const [isHover, setIsHover] = useState(false);
 
   return (
@@ -64,4 +64,4 @@ const RootPage = () => {
   );
 };
 
-export default RootPage;
+export default FleaMarketPage;
