@@ -15,7 +15,7 @@ const FleaMarketPage = () => {
       fetchedUrl = '/favicon.ico';
     } else if (props.url.startsWith('mailto:')) {
       fetchedUrl =
-        'https://www.google.com/s2/favicons?domain=https://webmail.disroot.org';
+        'https://www.google.com/s2/favicons?domain=https://erine.email';
     } else if (props.url.startsWith('http')) {
       fetchedUrl = `https://www.google.com/s2/favicons?domain=https://${
         new URL(props.url).hostname
@@ -57,12 +57,8 @@ const FleaMarketPage = () => {
       </div>
 
       <div id="section" className="">
-        <div className="fixed inset-0 z-[-1] h-full w-full opacity-50">
-          <Image
-            src="https://www.in05.org/images/logomark.svg"
-            alt="IN05"
-            layout="fill"
-          />
+        <div className="fixed inset-2 z-[-1] h-full w-full opacity-50">
+          <Image src="/images/logomark.svg" alt="IN05" layout="fill" />
         </div>
 
         <div className="w-full px-8 py-4">
@@ -72,9 +68,7 @@ const FleaMarketPage = () => {
           </p>
           <br />
           <p>
-            <Link href="https://house.in05.org">
-              [NEWS] New members wanted!
-            </Link>
+            <Link href="https://house.in05.org">JOIN US</Link>
           </p>
           <br />
           <div className="space-y-8">
@@ -83,7 +77,7 @@ const FleaMarketPage = () => {
               <ul>
                 {/* add more socials  */}
                 <li>
-                  <LinkWithIcon url="https://sho.hihara.cc/" text="Neila" />
+                  <LinkWithIcon url="https://neila.in05.org/" text="Neila" />
                 </li>
                 <li>
                   <LinkWithIcon url="https://silmin.net/" text="Silmin" />
@@ -103,11 +97,14 @@ const FleaMarketPage = () => {
               </ul>
             </div>
             <div>
-              <h3>Socials / Contacts</h3>
+              <h3>We're on</h3>
               <ul>
                 {/* add more socials  */}
                 <li>
-                  <LinkWithIcon url="mailto:contact@in05.org" text="Email" />
+                  <LinkWithIcon
+                    url="https://soundcloud.com/in05-network"
+                    text="Soundcloud"
+                  />
                 </li>
                 <li>
                   <LinkWithIcon
@@ -116,13 +113,13 @@ const FleaMarketPage = () => {
                   />
                 </li>
                 <li>
-                  <LinkWithIcon
-                    url="https://soundcloud.com/in05-network"
-                    text="Soundcloud"
-                  />
-                </li>
-                <li>
                   <LinkWithIcon url="https://x.com/in05x" text="Twitter" />
+                </li>
+              </ul>
+              <h3>Contact</h3>
+              <ul>
+                <li>
+                  <LinkWithIcon url="mailto:contact@in05.org" text="Email" />
                 </li>
               </ul>
             </div>
