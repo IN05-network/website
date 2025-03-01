@@ -36,10 +36,7 @@ const RootPage = () => {
                     <LinkWithIcon url="https://silmin.net/" text="Silmin" />
                   </li>
                   <li>
-                    <LinkWithIcon
-                      url="https://www.instagram.com/taiishiro/"
-                      text="Tai"
-                    />
+                    <LinkWithIcon url="https://taishi.ro/" text="Tai" />
                   </li>
                   <li>
                     <LinkWithIcon
