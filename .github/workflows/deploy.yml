@@ -25,7 +25,7 @@ jobs:
       - name: Use latest corepack
         run: |
           echo "Current: corepack $(corepack --version || echo 'not installed')"
-          pnpm install -g corepack@latest
+          npm install -g corepack@latest
           echo "Upgraded : corepack $(corepack --version)"
           corepack enable pnpm
           pnpm --version
