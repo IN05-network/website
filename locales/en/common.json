@@ -31,9 +31,10 @@
     "payment_to": "Payment to:",
     "items": {
       "250428": [
-        { "name": "Action figure", "price": "2 USD" },
-        { "name": "Books", "price": "1 USD" },
-        { "name": "test", "price": "10 USD" }
+        { "name": "Figure (KAWS)", "price": "150 USD" },
+        { "name": "Figure2 (KAWS)", "price": "150 USD" },
+        { "name": "Figure (KAWS) + Figure2 (KAWS)", "price": "250 USD" },
+        { "name": "Apple Pencil (New)", "price": "60 USD" }
       ]
     }
   }
