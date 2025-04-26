@@ -24,5 +24,17 @@
       "Committed to a sustainable and exciting lifestyle"
     ],
     "final-remarks": "Join us in creating a dynamic, supportive environment where ideas flourish, and lifelong connections are forged. Whether you're a coder, a creator, or a changemaker, if you have something special to bring to the table, there's a place for you in the IN05 community."
+  },
+  "flea-market": {
+    "title": "Flea Market",
+    "menu": "Menu",
+    "payment_to": "Payment to:",
+    "items": {
+      "250428": [
+        { "name": "Action figure", "price": "2 USD" },
+        { "name": "Books", "price": "1 USD" },
+        { "name": "test", "price": "10 USD" }
+      ]
+    }
   }
 }

@@ -15,42 +15,34 @@ const RootLayout = (props: { children: ReactNode }) => {
   const { redirect } = useRouteRedirect();
 
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head />
-      <body className="min-h-screen text-left font-mono antialiased">
-        <div className="fixed inset-0 h-full w-full opacity-50">
-          <Image src="/images/logomark.svg" alt="IN05" layout="fill" />
-        </div>
+    <body className="min-h-screen text-left font-mono antialiased">
+      <div className="fixed inset-0 h-full w-full opacity-50">
+        <Image src="/images/logomark.svg" alt="IN05" layout="fill" />
+      </div>
 
-        {/* Header */}
-        <div className="relative flex justify-between p-6">
-          {/* Home logo */}
-          <div
-            className="inline-block"
-            onMouseEnter={() => setIsHover(true)}
-            onMouseLeave={() => setIsHover(false)}
-          >
-            <button type="button" onClick={() => redirect('/')}>
-              <div className="flex cursor-pointer items-baseline">
-                <Image
-                  src="/images/logo.svg"
-                  alt="Logo"
-                  width={72}
-                  height={72}
-                />
-              </div>
-            </button>
-          </div>
-          {/* Language */}
-          <div className="flex items-center space-x-2">
-            <LanguageSwitcher locale="en" />
-            <span>/</span>
-            <LanguageSwitcher locale="ja" />
-          </div>
+      {/* Header */}
+      <div className="relative flex justify-between p-6">
+        {/* Home logo */}
+        <div
+          className="inline-block"
+          onMouseEnter={() => setIsHover(true)}
+          onMouseLeave={() => setIsHover(false)}
+        >
+          <button type="button" onClick={() => redirect('/')}>
+            <div className="flex cursor-pointer items-baseline">
+              <Image src="/images/logo.svg" alt="Logo" width={72} height={72} />
+            </div>
+          </button>
         </div>
-        <div className="relative">{props.children}</div>
-      </body>
-    </html>
+        {/* Language */}
+        <div className="flex items-center space-x-2">
+          <LanguageSwitcher locale="en" />
+          <span>/</span>
+          <LanguageSwitcher locale="ja" />
+        </div>
+      </div>
+      <div className="relative">{props.children}</div>
+    </body>
   );
 };
 

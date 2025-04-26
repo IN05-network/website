@@ -14,7 +14,7 @@ const RootPage = () => {
     <RootLayout>
       <div
         id="section"
-        className="mx-auto w-full p-4 laptop:w-4/5 laptop:text-left"
+        className="mx-auto laptop:w-4/5 w-full p-4 laptop:text-left"
       >
         <div id="section" className="">
           <div className="w-full px-8 py-4">
@@ -70,6 +70,12 @@ const RootPage = () => {
                 <ul>
                   <li>
                     <LinkWithIcon url="mailto:contact@in05.org" text="Email" />
+                  </li>
+                  <li>
+                    <LinkWithIcon
+                      url="https://matrix.to/#/#in05:tchncs.de"
+                      text="Matrix"
+                    />
                   </li>
                 </ul>
               </div>

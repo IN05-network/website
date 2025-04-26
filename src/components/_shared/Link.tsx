@@ -35,8 +35,7 @@ export const Link = ({
 };
 
 export const LinkWithIcon = (props: { url: string; text: string }) => {
-  const style =
-    'bg-[image:var(--favicon-url)] bg-left bg-no-repeat pl-[20px] inline-block bg-contain';
+  const style = 'bg-[image:var(--favicon-url)] bg-left bg-no-repeat pl-[20px]';
   let fetchedUrl = '';
   if (props.url.startsWith('/')) {
     fetchedUrl = 'https://www.in05.org/favicon.ico';

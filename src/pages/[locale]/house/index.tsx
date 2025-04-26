@@ -8,7 +8,7 @@ const RootPage = () => {
     <RootLayout>
       <div
         id="section"
-        className="mx-auto w-full p-4 laptop:w-4/5 laptop:text-left"
+        className="mx-auto laptop:w-4/5 w-full p-4 laptop:text-left"
       >
         <h1 className="text-center">{t('new-recruitment.title')}</h1>
         <br />
@@ -27,9 +27,8 @@ const RootPage = () => {
                 {},
                 { returnObjects: true },
               ) as string[]
-            ).map((item, index) => (
-              // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-              <li key={index}>{item}</li>
+            ).map((item, _) => (
+              <li key={item}>{item}</li>
             ))}
           </ul>
           <br />
@@ -41,9 +40,8 @@ const RootPage = () => {
                 {},
                 { returnObjects: true },
               ) as string[]
-            ).map((item, index) => (
-              // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-              <li key={index}>{item}</li>
+            ).map((item, _) => (
+              <li key={item}>{item}</li>
             ))}
           </ul>
           <br />
