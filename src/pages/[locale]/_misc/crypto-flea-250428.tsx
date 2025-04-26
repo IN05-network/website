@@ -1,35 +1,13 @@
 import RootLayout from '@/components/layouts/RootLayout';
 import { useI18n } from '@/hooks/useI18n';
 import Image from 'next/image';
-import Link from 'next/link';
-import { useState } from 'react';
-import LogoMark from '/public/images/logomark.svg';
-import LogoType_Blue from '/public/images/logotype_blue.png';
-import LogoType_White from '/public/images/logotype_white.png';
 
 const FleaMarketPage = () => {
   const { t } = useI18n();
-  const [isHover, setIsHover] = useState(false);
 
   return (
     <RootLayout>
       <div className="text-left font-mono">
-        {/* <div className="inline-block p-6">
-          <Link
-            className="no-underline hover:text-neutral-100"
-            href="/"
-            onMouseEnter={() => setIsHover(true)}
-            onMouseLeave={() => setIsHover(false)}
-          >
-            <Image
-              src={isHover ? LogoType_Blue : LogoType_White}
-              alt="Logo"
-              width={100}
-              height={100}
-            />
-          </Link>
-        </div> */}
-
         <div id="section" className="">
           <div className="fixed inset-0 z-[-1] h-full w-full opacity-50">
             <Image

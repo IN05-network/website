@@ -35,13 +35,17 @@ export const Link = ({
 };
 
 export const LinkWithIcon = (props: { url: string; text: string }) => {
-  const style = 'bg-[image:var(--favicon-url)] bg-left bg-no-repeat pl-[20px]';
+  const style =
+    'bg-[image:var(--favicon-url)] bg-left bg-no-repeat pl-[20px] inline-block';
   let fetchedUrl = '';
   if (props.url.startsWith('/')) {
     fetchedUrl = 'https://www.in05.org/favicon.ico';
   } else if (props.url.startsWith('mailto:')) {
     fetchedUrl =
       'https://www.google.com/s2/favicons?domain=https://erine.email';
+  } else if (props.url.startsWith('https://matrix.to/')) {
+    fetchedUrl =
+      'https://www.google.com/s2/favicons?domain=https://matrix.org/';
   } else if (props.url.startsWith('http')) {
     fetchedUrl = `https://www.google.com/s2/favicons?domain=https://${
       new URL(props.url).hostname
