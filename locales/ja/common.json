@@ -27,7 +27,7 @@
   },
   "flea-market": {
     "title": "フリーマーケット",
-    "menu": "売品",
+    "menu": "お品書き",
     "payment_to": "支払い先:",
     "items": {
       "250428": [
