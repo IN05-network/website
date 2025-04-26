@@ -1,5 +1,87 @@
 @import 'tailwindcss';
 
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-mobile: 320px;
+  --breakpoint-tablet: 481px;
+  --breakpoint-laptop: 769px;
+  --breakpoint-desktop: 1025px;
+  --breakpoint-monitor: 1201px;
+  --breakpoint-bigmonitor: 1441px;
+
+  --color-*: initial;
+  --color-haikei-yuzu: #f8f9c7;
+  --color-haikei-miyabi: #e4d0f6;
+  --color-haikei-kumo: #d3f3f1;
+
+  --color-success-100: #c1ff83;
+  --color-success-200: #b7ff6e;
+  --color-success-300: #a2ff45;
+  --color-success-400: #8eff1d;
+  --color-success-500: #79f300;
+  --color-success-600: #65ca00;
+  --color-success-700: #499200;
+  --color-success: #8eff1d;
+
+  --color-warning-100: #ffe7e8;
+  --color-warning-200: #ffbec1;
+  --color-warning-300: #fe969a;
+  --color-warning-400: #fe6d73;
+  --color-warning-500: #fe353e;
+  --color-warning-600: #f9020c;
+  --color-warning-700: #c10109;
+  --color-warning: #fe6d73;
+
+  --color-info-100: #5c7fff;
+  --color-info-200: #476fff;
+  --color-info-300: #335fff;
+  --color-info-400: #1f51ff;
+  --color-info-500: #0a3fff;
+  --color-info-600: #0035f5;
+  --color-info-700: #0031e0;
+  --color-info: #1f51ff;
+
+  --color-neutral-100: #ffffff;
+  --color-neutral-200: #f2f2f2;
+  --color-neutral-300: #b5b5b5;
+  --color-neutral-400: #787878;
+  --color-neutral-500: #3b3b3b;
+  --color-neutral-600: #1c1c1c;
+  --color-neutral-700: #000000;
+  --color-neutral: #1c1c1c;
+
+  --background-size-*: initial;
+  --background-size-favicon: 16px 16px;
+
+  --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+  --background-image-gradient-conic: conic-gradient(
+    from 180deg at 50% 50%,
+    var(--tw-gradient-stops)
+  );
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
 :root {
   --background-rgb: 0, 0, 0;
   --text-color: 255, 255, 255;
@@ -50,11 +132,5 @@ body {
   }
   a:hover {
     color: var(--info-color);
-  }
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
   }
 }
