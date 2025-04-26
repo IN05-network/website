@@ -23,25 +23,27 @@
     "tsc": "tsc",
     "lint": "biome check .",
     "lint:fix": "biome check . --write",
+    "lint:fix:all": "biome check . --write --unsafe",
     "format": "biome format .",
     "format:fix": "biome format . --write"
   },
   "dependencies": {
-    "next": "14.2.3",
+    "next": "15.3.1",
     "next-language-detector": "^1.1.0",
     "next-translate": "^2.6.2",
-    "react": "~18.2.0",
-    "react-dom": "~18.2.0"
+    "react": "~19.1.0",
+    "react-dom": "~19.1.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.8.0",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "postcss": "^8",
-    "simple-git-hooks": "^2.11.1",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "@biomejs/biome": "^1.9.4",
+    "@tailwindcss/postcss": "^4.1.4",
+    "@types/node": "^22.15.2",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "postcss": "^8.5.3",
+    "simple-git-hooks": "^2.13.0",
+    "tailwindcss": "^4.1.4",
+    "typescript": "^5.8.3"
   },
   "packageManager": "pnpm@9.1.4+sha1.2432063d815cfa88fd9fef1d85a445e3f609851d",
   "simple-git-hooks": {
