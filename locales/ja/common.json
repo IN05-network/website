@@ -31,9 +31,13 @@
     "payment_to": "支払い先:",
     "items": {
       "250428": [
-        { "name": "フィギュア", "price": "2ドル" },
-        { "name": "本", "price": "1ドル" },
-        { "name": "香水", "price": "10ドル" }
+        { "name": "有名なフィギュア(KAWS)", "price": "150ドル" },
+        { "name": "有名なフィギュア2(KAWS)", "price": "150ドル" },
+        {
+          "name": "有名なフィギュア(KAWS) + 有名なフィギュア2(KAWS)",
+          "price": "250ドル"
+        },
+        { "name": "Apple Pencil (新品)", "price": "60ドル" }
       ]
     }
   }
