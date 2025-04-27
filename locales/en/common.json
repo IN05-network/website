@@ -34,7 +34,27 @@
         { "name": "Figure (KAWS)", "price": "150 USD" },
         { "name": "Figure2 (KAWS)", "price": "150 USD" },
         { "name": "Figure (KAWS) + Figure2 (KAWS)", "price": "250 USD" },
-        { "name": "Apple Pencil (New)", "price": "60 USD" }
+        { "name": "Apple Pencil (New)", "price": "60 USD" },
+        { "name": "Wave, Listen to Me! (Volumes 1-8)", "price": "15 USD" },
+        {
+          "name": "World Trigger (Volumes 1-23 + Official Data Book)",
+          "price": "35 USD"
+        },
+        {
+          "name": "Lu-Garou + Lu-Garou 2 + Evil Droplets - Kyogoku Natsuhiko Series",
+          "price": "15 USD"
+        },
+        { "name": "Shoujo Fight (Volumes 1-15)", "price": "30 USD" },
+        { "name": "Kakushigoto (Volumes 1-5)", "price": "10 USD" },
+        { "name": "Voynich Hotel (Volumes 1-2)", "price": "3 USD" },
+        {
+          "name": "Tokyo Life Disaster Prevention + Tokyo Disaster Prevention",
+          "price": "3 USD"
+        },
+        {
+          "name": "POPAYE Stories of Books and Movies (Special Edition)",
+          "price": "3 USD"
+        }
       ]
     }
   }
