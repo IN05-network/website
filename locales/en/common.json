@@ -90,6 +90,21 @@
           "name": "Tokyo Life Disaster Prevention Handbook",
           "price": "9.99 USD",
           "category": "books"
+        },
+        {
+          "name": "Yeezy Boost 350 V2 Zebra (25.5cm) (new)",
+          "price": "99.99 USD",
+          "category": "sneakers"
+        },
+        {
+          "name": "Yeezy Boost 350 V2 White (25.5cm) (new)",
+          "price": "99.99 USD",
+          "category": "sneakers"
+        },
+        {
+          "name": "Yeezy Boost 350 V2 'Blue Tint' (25.5cm) (new)",
+          "price": "199.99 USD",
+          "category": "sneakers"
         }
       ]
     }
