@@ -31,29 +31,65 @@
     "payment_to": "Payment to:",
     "items": {
       "250428": [
-        { "name": "Figure (KAWS)", "price": "150 USD" },
-        { "name": "Figure2 (KAWS)", "price": "150 USD" },
-        { "name": "Figure (KAWS) + Figure2 (KAWS)", "price": "250 USD" },
-        { "name": "Apple Pencil (New)", "price": "60 USD" },
-        { "name": "Wave, Listen to Me! (Volumes 1-8)", "price": "15 USD" },
+        {
+          "name": "KAWS Blush Companion figure",
+          "price": "99.99 USD",
+          "category": "KAWS figures"
+        },
+        {
+          "name": "KAWS Blush Companion (dissected) figure",
+          "price": "99.99 USD",
+          "category": "KAWS figures"
+        },
+        {
+          "name": "KAWS Blush Companion set",
+          "price": "149.99 USD",
+          "category": "KAWS figures"
+        },
+        {
+          "name": "Apple Pencil (new)",
+          "price": "59.99 USD",
+          "category": "gadgets"
+        },
         {
           "name": "World Trigger (Volumes 1-23 + Official Data Book)",
-          "price": "35 USD"
+          "price": "49.99 USD",
+          "category": "comics"
         },
         {
-          "name": "Lu-Garou + Lu-Garou 2 + Evil Droplets - Kyogoku Natsuhiko Series",
-          "price": "15 USD"
-        },
-        { "name": "Shoujo Fight (Volumes 1-15)", "price": "30 USD" },
-        { "name": "Kakushigoto (Volumes 1-5)", "price": "10 USD" },
-        { "name": "Voynich Hotel (Volumes 1-2)", "price": "3 USD" },
-        {
-          "name": "Tokyo Life Disaster Prevention + Tokyo Disaster Prevention",
-          "price": "3 USD"
+          "name": "Shoujo Fight (Volumes 1-15)",
+          "price": "29.99 USD",
+          "category": "comics"
         },
         {
-          "name": "POPAYE Stories of Books and Movies (Special Edition)",
-          "price": "3 USD"
+          "name": "Wave, Listen to Me! (Volumes 1-8)",
+          "price": "19.99 USD",
+          "category": "comics"
+        },
+        {
+          "name": "Kakushigoto (Volumes 1-5)",
+          "price": "9.99 USD",
+          "category": "comics"
+        },
+        {
+          "name": "Voynich Hotel (Volumes 1-2)",
+          "price": "4.99 USD",
+          "category": "comics"
+        },
+        {
+          "name": "[SF Mystery set] Loups=Garous & Evil Droplets",
+          "price": "14.99 USD",
+          "category": "books"
+        },
+        {
+          "name": "[POPEYE Special Edition] Stories of Books & Films",
+          "price": "9.99 USD",
+          "category": "books"
+        },
+        {
+          "name": "Tokyo Life Disaster Prevention Handbook",
+          "price": "9.99 USD",
+          "category": "books"
         }
       ]
     }

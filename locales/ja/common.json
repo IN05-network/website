@@ -31,26 +31,66 @@
     "payment_to": "支払い先:",
     "items": {
       "250428": [
-        { "name": "有名なフィギュア(KAWS)", "price": "150ドル" },
-        { "name": "有名なフィギュア2(KAWS)", "price": "150ドル" },
         {
-          "name": "有名なフィギュア(KAWS) + 有名なフィギュア2(KAWS)",
-          "price": "250ドル"
-        },
-        { "name": "Apple Pencil (新品)", "price": "60ドル" },
-        { "name": "波よ聞いてくれ (1-8巻)", "price": "15ドル" },
-        {
-          "name": "ワールドトリガー (1-23巻 + オフィシャルデータブック)",
-          "price": "35ドル"
+          "name": "KAWS Blush Companion",
+          "price": "99.99 USD",
+          "category": "KAWS figures"
         },
         {
-          "name": "ルー＝ガール + ルー=ガール2 + 邪悪の雫 京極夏彦シリーズ",
-          "price": "15ドル"
+          "name": "KAWS Blush Companion (dissected)",
+          "price": "99.99 USD",
+          "category": "KAWS figures"
         },
-        { "name": "少女ファイト (1-15巻)", "price": "30ドル" },
-        { "name": "かくしごと (1-5巻)", "price": "10ドル" },
-        { "name": "ボイニッチホテル (1-2巻)", "price": "3ドル" },
-        { "name": "POPAYE 本と映画のはなし(特別編集)", "price": "3ドル" }
+        {
+          "name": "KAWS Blush Companion set",
+          "price": "149.99 USD",
+          "category": "KAWS figures"
+        },
+        {
+          "name": "Apple Pencil (新品)",
+          "price": "59.99 USD",
+          "category": "gadgets"
+        },
+        {
+          "name": "[葦原大介]ワールドトリガー 1-23巻 + オフィシャルデータブック",
+          "price": "49.99 USD",
+          "category": "comics"
+        },
+        {
+          "name": "[日本橋ヨヲコ]少女ファイト 1-15巻",
+          "price": "29.99 USD",
+          "category": "comics"
+        },
+        {
+          "name": "[沙村広明] 波よ聞いてくれ 1-8巻",
+          "price": "19.99 USD",
+          "category": "comics"
+        },
+        {
+          "name": "[久米田康治]かくしごと 1-5巻",
+          "price": "9.99 USD",
+          "category": "comics"
+        },
+        {
+          "name": "[道満晴明]ボイニッチホテル1巻+2巻",
+          "price": "4.99 USD",
+          "category": "comics"
+        },
+        {
+          "name": "[京極夏彦 SFミステリーセット]ルーガルー1巻+2巻 & 邪悪の雫",
+          "price": "14.99 USD",
+          "category": "books"
+        },
+        {
+          "name": "POPEYE特別編集版「本と映画のはなし」",
+          "price": "9.99 USD",
+          "category": "books"
+        },
+        {
+          "name": "東京都防災ハンドブック",
+          "price": "9.99 USD",
+          "category": "books"
+        }
       ]
     }
   }

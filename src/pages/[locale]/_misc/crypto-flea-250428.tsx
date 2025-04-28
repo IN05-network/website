@@ -17,42 +17,65 @@ const FleaMarketPage = () => {
             />
           </div>
 
-          <div className="w-full px-8 py-4 text-center">
+          <div className="w-full px-8 text-center">
             <h2>{t('flea-market.menu')}</h2>
             <br />
-            <div className="grid grid-cols-2 gap-32">
-              <div>
-                <ul className="text-right">
-                  {(
-                    t(
-                      'flea-market.items.250428',
-                      {},
-                      { returnObjects: true },
-                    ) as { name: string; price: string }[]
-                  ).map((i, _) => (
-                    <li key={i.name}>{i.name}</li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <ul className="text-left">
-                  {(
-                    t(
-                      'flea-market.items.250428',
-                      {},
-                      { returnObjects: true },
-                    ) as { name: string; price: string }[]
-                  ).map((i, _) => (
-                    <li key={i.name}>{i.price}</li>
-                  ))}
-                </ul>
-              </div>
+            <div className="w-full">
+              {Object.entries(
+                (
+                  t(
+                    'flea-market.items.250428',
+                    {},
+                    { returnObjects: true },
+                  ) as { name: string; price: string; category: string }[]
+                ).reduce(
+                  (acc, item) => {
+                    if (!acc[item.category]) {
+                      acc[item.category] = [];
+                    }
+                    acc[item.category].push(item);
+                    return acc;
+                  },
+                  {} as Record<
+                    string,
+                    { name: string; price: string; category: string }[]
+                  >,
+                ),
+              ).map(([category, items]) => (
+                <div key={category} className="mb-6">
+                  <h3 className="mb-2">{category}</h3>
+                  <ul className="text-center">
+                    {items.map((item) => (
+                      <li
+                        key={item.name}
+                        className="mb-2 laptop:space-x-0 space-x-4 laptop:text-lg text-base"
+                      >
+                        <span className="laptop:inline-block laptop:w-1/2 laptop:pr-4 laptop:text-right">
+                          {item.name}
+                        </span>
+                        <span className="laptop:inline-block laptop:w-1/2 laptop:pl-4 laptop:text-left">
+                          {item.price}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
             <br />
             <p>
               {t('flea-market.payment_to')}{' '}
-              <code>0x7019fb4070Ad73ceC2069151Aa4B82b8d578d0E8</code>
+              <code className="laptop:text-lg tablet:text-base text-xs">
+                0x7019fb4070Ad73ceC2069151Aa4B82b8d578d0E8
+              </code>
             </p>
+            <Image
+              src="/images/in05_safe.png"
+              alt="Payment address"
+              className="mx-auto p-4"
+              width={200}
+              height={200}
+            />
             <p>USDC or ETH on base</p>
           </div>
         </div>

@@ -21,7 +21,7 @@ const RootLayout = (props: { children: ReactNode }) => {
       </div>
 
       {/* Header */}
-      <div className="relative flex justify-between p-6">
+      <div className="relative flex justify-between p-4">
         {/* Home logo */}
         <div
           className="inline-block"
