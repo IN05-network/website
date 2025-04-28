@@ -90,6 +90,11 @@
           "name": "Tokyo Life Disaster Prevention Handbook",
           "price": "9.99 USD",
           "category": "books"
+        },
+        {
+          "name": "List of No-KYC services",
+          "price": "Name your own price",
+          "category": "books"
         }
       ]
     }
