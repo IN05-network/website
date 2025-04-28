@@ -27,7 +27,12 @@ const FleaMarketPage = () => {
                     'flea-market.items.250428',
                     {},
                     { returnObjects: true },
-                  ) as { name: string; price: string; category: string }[]
+                  ) as {
+                    name: string;
+                    price: string;
+                    category: string;
+                    sold_out?: boolean;
+                  }[]
                 ).reduce(
                   (acc, item) => {
                     if (!acc[item.category]) {
@@ -38,7 +43,12 @@ const FleaMarketPage = () => {
                   },
                   {} as Record<
                     string,
-                    { name: string; price: string; category: string }[]
+                    {
+                      name: string;
+                      price: string;
+                      category: string;
+                      sold_out?: boolean;
+                    }[]
                   >,
                 ),
               ).map(([category, items]) => (
@@ -51,10 +61,18 @@ const FleaMarketPage = () => {
                         className="mb-2 laptop:space-x-0 space-x-4 laptop:text-lg text-base"
                       >
                         <span className="laptop:inline-block laptop:w-1/2 laptop:pr-4 laptop:text-right">
-                          {item.name}
+                          {item.sold_out ? (
+                            <s>(SOLD OUT) {item.name}</s>
+                          ) : (
+                            item.name
+                          )}
                         </span>
                         <span className="laptop:inline-block laptop:w-1/2 laptop:pl-4 laptop:text-left">
-                          {item.price}
+                          {item.sold_out ? (
+                            <s>(SOLD OUT) {item.price}</s>
+                          ) : (
+                            item.price
+                          )}
                         </span>
                       </li>
                     ))}

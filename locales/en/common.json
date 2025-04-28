@@ -34,72 +34,86 @@
         {
           "name": "KAWS Blush Companion figure",
           "price": "99.99 USD",
-          "category": "KAWS figures"
+          "category": "KAWS figures",
+          "sold_out": true
         },
         {
           "name": "KAWS Blush Companion (dissected) figure",
           "price": "99.99 USD",
-          "category": "KAWS figures"
+          "category": "KAWS figures",
+          "sold_out": true
         },
         {
           "name": "KAWS Blush Companion set",
           "price": "149.99 USD",
-          "category": "KAWS figures"
+          "category": "KAWS figures",
+          "sold_out": true
         },
         {
           "name": "World Trigger (Volumes 1-23 + Official Data Book)",
           "price": "49.99 USD",
-          "category": "comics"
+          "category": "comics",
+          "sold_out": false
         },
         {
           "name": "Shoujo Fight (Volumes 1-15)",
           "price": "29.99 USD",
-          "category": "comics"
+          "category": "comics",
+          "sold_out": false
         },
         {
           "name": "Wave, Listen to Me! (Volumes 1-8)",
           "price": "19.99 USD",
-          "category": "comics"
+          "category": "comics",
+          "sold_out": false
         },
         {
           "name": "Kakushigoto (Volumes 1-5)",
           "price": "9.99 USD",
-          "category": "comics"
+          "category": "comics",
+          "sold_out": false
         },
         {
           "name": "Voynich Hotel (Volumes 1-2)",
           "price": "4.99 USD",
-          "category": "comics"
+          "category": "comics",
+          "sold_out": false
         },
         {
           "name": "[SF Mystery set] Loups=Garous & Evil Droplets",
           "price": "14.99 USD",
-          "category": "books"
+          "category": "books",
+          "sold_out": false
         },
         {
           "name": "[POPEYE Special Edition] Stories of Books & Films",
           "price": "9.99 USD",
-          "category": "books"
+          "category": "books",
+          "sold_out": false
         },
         {
           "name": "Tokyo Life Disaster Prevention Handbook + Medical methylphenidate handbook",
           "price": "9.99 USD",
-          "category": "books"
+          "category": "books",
+          "sold_out": false
         },
         {
           "name": "Yeezy Boost 350 V2 Zebra (25.5cm) (new)",
           "price": "149.99 USD",
-          "category": "sneakers"
+          "category": "sneakers",
+          "sold_out": false
         },
         {
           "name": "Yeezy Boost 350 V2 White (25.5cm) (new)",
           "price": "119.99 USD",
-          "category": "sneakers"
+          "category": "sneakers",
+          "sold_out": false
         },
         {
           "name": "Yeezy Boost 350 V2 'Blue Tint' (25.5cm) (new)",
           "price": "199.99 USD",
-          "category": "sneakers"
+          "category": "sneakers",
+          "sold_out": false
         }
       ]
     }
