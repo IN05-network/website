@@ -90,6 +90,11 @@
           "name": "東京都防災ハンドブック",
           "price": "9.99 USD",
           "category": "books"
+        },
+        {
+          "name": "KYC不要のサービスリスト",
+          "price": "Name your own price",
+          "category": "books"
         }
       ]
     }
