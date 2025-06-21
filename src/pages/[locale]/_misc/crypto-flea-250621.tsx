@@ -81,7 +81,6 @@ const FleaMarketPage = () => {
               ))}
             </div>
             <p>{t('flea-market.price_note')}</p>
-
             <br />
             <Image
               src="/images/in05_safe.png"
