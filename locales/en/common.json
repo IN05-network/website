@@ -27,8 +27,9 @@
   },
   "flea-market": {
     "title": "Flea Market",
-    "menu": "Menu",
+    "menu": "Books",
     "payment_to": "Payment to:",
+    "price_note": "* All prices are in USD.",
     "items": {
       "250428": [
         {
@@ -113,6 +114,50 @@
           "name": "Yeezy Boost 350 V2 'Blue Tint' (25.5cm) (new)",
           "price": "199.99 USD",
           "category": "sneakers",
+          "sold_out": false
+        }
+      ],
+      "250621": [
+        {
+          "name": "Shoujo Fight (Volumes 1-15)",
+          "price": "20.00",
+          "category": "comics",
+          "sold_out": false
+        },
+        {
+          "name": "Wave, Listen to Me! (Volumes 1-8)",
+          "price": "10.00",
+          "category": "comics",
+          "sold_out": false
+        },
+        {
+          "name": "Kakushigoto (Volumes 1-5)",
+          "price": "10.00",
+          "category": "comics",
+          "sold_out": false
+        },
+        {
+          "name": "Voynich Hotel (Volumes 1-2)",
+          "price": "5.00",
+          "category": "comics",
+          "sold_out": false
+        },
+        {
+          "name": "[SF Mystery set] Loups=Garous & Evil Droplets",
+          "price": "15.00",
+          "category": "novels",
+          "sold_out": false
+        },
+        {
+          "name": "[POPEYE Special Edition] Stories of Books & Films",
+          "price": "5.00",
+          "category": "novels",
+          "sold_out": false
+        },
+        {
+          "name": "Tokyo Disaster + Medical methylphenidate handbook set",
+          "price": "5.00",
+          "category": "guides",
           "sold_out": false
         }
       ]
