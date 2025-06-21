@@ -27,8 +27,10 @@
   },
   "flea-market": {
     "title": "フリーマーケット",
-    "menu": "お品書き",
+    "menu": "古本",
     "payment_to": "支払い先:",
+    "price_note": "* 価格はすべてUSDです。",
+    "sticker_memo": "ステッカーご自由にどうぞ。",
     "items": {
       "250428": [
         {
@@ -113,6 +115,50 @@
           "name": "Yeezy Boost 350 V2 'Blue Tint' (25.5cm) (新品)",
           "price": "199.99 USD",
           "category": "sneakers",
+          "sold_out": false
+        }
+      ],
+      "250621": [
+        {
+          "name": "[日本橋ヨヲコ]少女ファイト 1-15巻",
+          "price": "20.00",
+          "category": "comics",
+          "sold_out": false
+        },
+        {
+          "name": "[沙村広明] 波よ聞いてくれ 1-8巻",
+          "price": "10.00",
+          "category": "comics",
+          "sold_out": false
+        },
+        {
+          "name": "[久米田康治]かくしごと 1-5巻",
+          "price": "10.00",
+          "category": "comics",
+          "sold_out": false
+        },
+        {
+          "name": "[道満晴明]ボイニッチホテル1巻+2巻",
+          "price": "5.00",
+          "category": "comics",
+          "sold_out": false
+        },
+        {
+          "name": "[京極夏彦 SFミステリーセット]ルーガルー1巻+2巻 & 邪悪の雫",
+          "price": "15.00",
+          "category": "novels",
+          "sold_out": false
+        },
+        {
+          "name": "POPEYE特別編集版「本と映画のはなし」",
+          "price": "5.00",
+          "category": "novels",
+          "sold_out": false
+        },
+        {
+          "name": "東京都防災ハンドブック + コンサータ服用マニュアル",
+          "price": "5.00",
+          "category": "guides",
           "sold_out": false
         }
       ]
