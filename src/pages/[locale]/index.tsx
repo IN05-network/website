@@ -1,11 +1,11 @@
 import { LinkWithIcon } from '@/components/_shared/Link';
 import RootLayout from '@/components/layouts/RootLayout';
 import { useI18n } from '@/hooks/useI18n';
-import Image from 'next/image';
-import Link from 'next/link';
-import LogoMark from '/public/images/logomark.svg';
-import LogoType_Blue from '/public/images/logotype_blue.png';
-import LogoType_White from '/public/images/logotype_white.png';
+// import Image from 'next/image';
+// import Link from 'next/link';
+// import LogoMark from '/public/images/logomark.svg';
+// import LogoType_Blue from '/public/images/logotype_blue.png';
+// import LogoType_White from '/public/images/logotype_white.png';
 
 const RootPage = () => {
   const { t } = useI18n();
@@ -24,7 +24,7 @@ const RootPage = () => {
               <Link href="/house">JOIN US</Link>
             </p> */}
             <br />
-            <div className="space-y-8">
+            <div className="grid grid-cols-1 tablet:grid-cols-2 gap-8">
               <div>
                 <h3>Current Members</h3>
                 <ul>
@@ -45,8 +45,7 @@ const RootPage = () => {
                     />
                   </li>
                 </ul>
-              </div>
-              <div>
+
                 <h3>We're on</h3>
                 <ul>
                   {/* add more socials  */}
@@ -78,6 +77,15 @@ const RootPage = () => {
                     />
                   </li>
                 </ul>
+              </div>
+              <div>
+                <iframe
+                  title="SoundCloud"
+                  height="420"
+                  width=""
+                  src="https://w.soundcloud.com/player/?url=https://soundcloud.com/in05-network/&visual=true&sharing=false&hide_related=true"
+                  data-reactid=".0.0"
+                />
               </div>
             </div>
           </div>
