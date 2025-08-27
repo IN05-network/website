@@ -30,7 +30,10 @@ const RootPage = () => {
                 <ul>
                   {/* add more socials  */}
                   <li>
-                    <LinkWithIcon url="https://neila.in05.org/" text="Neila" />
+                    <LinkWithIcon
+                      url="https://irohas.in05.org/"
+                      text="Irohas"
+                    />
                   </li>
                   <li>
                     <LinkWithIcon url="https://silmin.net/" text="Silmin" />
