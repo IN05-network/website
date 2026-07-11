@@ -31,7 +31,7 @@ const RootPage = () => {
                   {/* add more socials  */}
                   <li>
                     <LinkWithIcon
-                      url="https://irohas.in05.org/"
+                      url="https://irohas.eth.sucks/"
                       text="Irohas"
                     />
                   </li>
